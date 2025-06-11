@@ -37,9 +37,12 @@ export default function ContactsPage() {
       <div className="mt-12 p-6 bg-muted rounded-lg">
         <h2 className="text-xl font-semibold mb-3">API Usage</h2>
         <p className="text-sm text-muted-foreground mb-2">Use the lookup endpoint to find contacts by phone number:</p>
-        <code className="text-sm bg-background px-3 py-1 rounded border">GET /api/lookup?phone=0785256291</code>
+        <div className="space-y-2">
+          <code className="text-sm bg-background px-3 py-1 rounded border block">GET /api/lookup?phone=0785256291</code>
+          <code className="text-sm bg-background px-3 py-1 rounded border block">GET /api/lookup?phone=5256291</code>
+        </div>
         <p className="text-xs text-muted-foreground mt-2">
-          Replace the phone number with any number from the contacts above.
+          You can search using the full phone number or just the last 7 digits.
         </p>
       </div>
     </div>

@@ -134,19 +134,53 @@ export default function TestAPIPage() {
 
       <div className="mt-8 p-4 bg-muted rounded-lg">
         <h3 className="font-semibold mb-2">Sample Phone Numbers to Test:</h3>
-        <div className="grid grid-cols-2 gap-2 text-sm font-mono">
-          <button onClick={() => setPhoneNumber("0785256291")} className="text-left hover:text-primary cursor-pointer">
-            0785256291
-          </button>
-          <button onClick={() => setPhoneNumber("0701234567")} className="text-left hover:text-primary cursor-pointer">
-            0701234567
-          </button>
-          <button onClick={() => setPhoneNumber("0772345678")} className="text-left hover:text-primary cursor-pointer">
-            0772345678
-          </button>
-          <button onClick={() => setPhoneNumber("0753456789")} className="text-left hover:text-primary cursor-pointer">
-            0753456789
-          </button>
+        <div className="space-y-2">
+          <div>
+            <p className="text-sm font-medium mb-1">Full Numbers:</p>
+            <div className="grid grid-cols-2 gap-2 text-sm font-mono">
+              <button
+                onClick={() => setPhoneNumber("0785256291")}
+                className="text-left hover:text-primary cursor-pointer"
+              >
+                0785256291
+              </button>
+              <button
+                onClick={() => setPhoneNumber("0701234567")}
+                className="text-left hover:text-primary cursor-pointer"
+              >
+                0701234567
+              </button>
+              <button
+                onClick={() => setPhoneNumber("0772345678")}
+                className="text-left hover:text-primary cursor-pointer"
+              >
+                0772345678
+              </button>
+              <button
+                onClick={() => setPhoneNumber("0753456789")}
+                className="text-left hover:text-primary cursor-pointer"
+              >
+                0753456789
+              </button>
+            </div>
+          </div>
+          <div>
+            <p className="text-sm font-medium mb-1">Last 7 Digits:</p>
+            <div className="grid grid-cols-2 gap-2 text-sm font-mono">
+              <button onClick={() => setPhoneNumber("5256291")} className="text-left hover:text-primary cursor-pointer">
+                5256291
+              </button>
+              <button onClick={() => setPhoneNumber("1234567")} className="text-left hover:text-primary cursor-pointer">
+                1234567
+              </button>
+              <button onClick={() => setPhoneNumber("2345678")} className="text-left hover:text-primary cursor-pointer">
+                2345678
+              </button>
+              <button onClick={() => setPhoneNumber("3456789")} className="text-left hover:text-primary cursor-pointer">
+                3456789
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
